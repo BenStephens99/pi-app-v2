@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color1: #4678FB;
+    --color2: #D8F6FF;
+    --color3: #b2c6ff;
+    --color4: #0031ae;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color1);
+    cursor: none;
+}
+
+main {  
+    width: 95%;
+    height: 90%;
+    display: grid;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+#switches {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: absolute;
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    left: 0;
+}
+
+button {
+    background-color: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.switch {
+    position: relative;
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.switch.single {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: auto;
+}
+
+.switch-title {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    font-size: 1em;
+}
+
+.toggles {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--color2);
+    border: var(--color1) solid 2px;
+    color: var(--color1);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.switch.single .toggles {
+    height: 70%;
+    margin-top: auto;
+}
+
+
+.toggle {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    transition: 400ms;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.toggle.left {
+    border-right: 1px solid var(--color3);
+}
+
+.toggle.middle {
+    border-left: 1px solid var(--color3);
+    border-right: 1px solid var(--color3);
+}
+
+.toggle.right {
+    border-left: 1px solid var(--color3);
+}
+
+.toggle p {
+    height: 45px;
+}
+
+.toggle p img {
+    height: 60%;
+    filter: invert(44%) sepia(45%) saturate(4504%) hue-rotate(210deg) brightness(100%) contrast(98%);
+}
+
+.main-toggle {
+    display: flex;
+    width: 90%;
+    font-size: 0.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 2px solid var(--color1);
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    box-sizing: border-box;
+    height: 150%;
+    margin: auto;
+    text-transform: uppercase;
+    transition: 500ms;
+}
+
+.main-toggle p {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.button-on {
+    background-color: var(--color3);
+    box-shadow: none;
+}
+
+.button-off {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+#clock #time{
+    font-size: 150px;
+    line-height: 0.8em;
+}
+
+#stations {
+   display: flex;
+   position: absolute;
+   height: 60%;
+   width: 200px;
+}
+
+.station-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.station-button {
+    box-shadow: 0 0 3px var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    color: var(--color3);
+    transition: 200ms;
+}
+
+.station-button.selected {
+    box-shadow: none;
+    color: var(--color1);
+    background-color: #b2c6ff;
+    border: 2px solid var(--color1);
+}

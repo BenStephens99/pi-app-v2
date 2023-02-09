@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="main">
+
+        <div id="stations">
+            <div class="station-buttons">
+                <div id="https://open.spotify.com/playlist/37i9dQZEVXbLnolsZ8PSNw?si=ii0INDRFQ7-B4nItbcVyJA&utm_source=copy-link" class="station-button">TOP 40</div>
+                <div id="aac://http://media-ice.musicradio.com/HeartUK" class="station-button">Heart</div>
+                <div id="x-rincon-mp3radio://http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two" class="station-button">BBC 2</div>
+                <div id="hls-radio://http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlow/ak/bbc_radio_fourfm.m3u8" class="station-button">BBC 4</div>
+            </div>
+        </div>
+
+        <div id="clock">
+            <span id="time">12:00</span>
+            <span id="weather">5 Partly Cloudy</span>
+        </div>
+        <div id="switches">
+
+            <div class="switch single" id="hallway">
+                <div class="switch-title">Hallway</div>
+                <div class="toggles">
+                    <div id="switch.hallway_lamp_socket" class="toggle">
+                        <p><img src="./images/light-bulb.svg"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="switch">
+                <div class="switch-title">Lounge</div>
+                <div id="lounge" class="main-toggle">
+                    <p>OFF</p>
+                </div>
+                <div class="toggles">
+                    <div id="switch.front_lamp_socket" class="toggle left">
+                        <p><img src="./images/light-bulb.svg"></p>
+                    </div>
+                    <div id="switch.small_lamp_socket" class="toggle middle">
+                        <p><img src="./images/light-bulb.svg"></p>
+                    </div>
+                    <div id="switch.back_lamps_socket" class="toggle right">
+                        <p><img src="./images/light-bulb.svg"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="switch">
+                <div class="switch-title">Shed</div>
+                <div id="shed" class="main-toggle">
+                    <p>OFF</p>
+                </div>
+                <div class="toggles">
+                    <div id="switch.tall_lamp_socket" class="toggle left">
+                        <p><img src="./images/light-bulb.svg"></p>
+                    </div>
+                    <div id="switch.shed_heater" class="toggle right">
+                        <p><img src="./images/flame.svg"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
