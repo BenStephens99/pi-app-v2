@@ -20,6 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--color1);
+    cursor: none;
 }
 
 main {  
