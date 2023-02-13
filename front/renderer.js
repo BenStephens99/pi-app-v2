@@ -279,7 +279,6 @@ let updateWeather = function () {
         ({
             type: "GET",
             url: 'http://dataservice.accuweather.com/currentconditions/v1/2522448?apikey=jZFnKXVtgGQjyLR50G9GyixXVAq0UyDI',
-            async: false,
             dataType: 'json',
             username: "jZFnKXVtgGQjyLR50G9GyixXVAq0UyDI",
             password: ":",
