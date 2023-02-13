@@ -197,8 +197,7 @@ button {
 }
 
 .station-button.selected {
-    box-shadow: none;
     color: var(--color1);
+    box-shadow: none;
     background-color: #b2c6ff;
-    border: 2px solid var(--color1);
 }
