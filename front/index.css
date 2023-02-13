@@ -162,8 +162,8 @@ button {
     text-align: center;
     align-items: center;
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 0px;
+    right: 35px;
 }
 
 #clock #time{
