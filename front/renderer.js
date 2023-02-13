@@ -305,4 +305,4 @@ setInterval(function () {
 
 updateUIs();
 updateTime();
-//updateWeather();
+updateWeather();
