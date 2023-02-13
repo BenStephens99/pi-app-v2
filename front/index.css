@@ -20,7 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--color1);
-    cursor: none;
 }
 
 main {  
@@ -80,9 +79,7 @@ button {
     border-radius: 20px;
     background-color: var(--color2);
     color: var(--color1);
-    overflow: hidden;
     box-sizing: border-box;
-    box-shadow: 0px 0px 5px var(--color4);
 }
 
 .switch.single .toggles {
@@ -99,19 +96,26 @@ button {
     transition: 400ms;
     width: 100%;
     box-sizing: border-box;
+    box-shadow: 0px 0px 3px var(--color4);
+    border-radius: 20px;
 }
 
 .toggle.left {
     border-right: 1px solid var(--color3);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .toggle.middle {
     border-left: 1px solid var(--color3);
     border-right: 1px solid var(--color3);
+    border-radius: 0px;
 }
 
 .toggle.right {
     border-left: 1px solid var(--color3);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .toggle p {
@@ -129,7 +133,7 @@ button {
     font-size: 0.5em;
     font-weight: bold;
     letter-spacing: 2px;
-    box-shadow: 0 0 5px var(--color4);
+    box-shadow: 0 0 3px var(--color4);
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     box-sizing: border-box;
@@ -149,12 +153,14 @@ button {
 .button-on {
     background-color: var(--color3);
     box-shadow: none;
+    border: 1px solid var(--color2);
 }
 
 .button-off {
     background-color: var(--color2);
     color: var(--color1);
 }
+
 
 #clock {
     display: flex;
