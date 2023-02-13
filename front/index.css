@@ -79,10 +79,10 @@ button {
     height: 100%;
     border-radius: 20px;
     background-color: var(--color2);
-    border: var(--color1) solid 2px;
     color: var(--color1);
     overflow: hidden;
     box-sizing: border-box;
+    box-shadow: 0px 0px 5px var(--color4);
 }
 
 .switch.single .toggles {
@@ -129,7 +129,7 @@ button {
     font-size: 0.5em;
     font-weight: bold;
     letter-spacing: 2px;
-    border: 2px solid var(--color1);
+    box-shadow: 0 0 5px var(--color4);
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     box-sizing: border-box;
