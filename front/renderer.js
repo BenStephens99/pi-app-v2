@@ -274,17 +274,13 @@ async function updateUIs() {
 setInterval(updateUIs, 10 * 1000)
 
 
-let updateWeather = function () {
+function updateWeather () {
     jq.ajax
         ({
             type: "GET",
             url: 'http://dataservice.accuweather.com/currentconditions/v1/2522448?apikey=jZFnKXVtgGQjyLR50G9GyixXVAq0UyDI',
-            dataType: 'json',
-            username: "jZFnKXVtgGQjyLR50G9GyixXVAq0UyDI",
-            password: ":",
             success(res) {
                 document.getElementById("weather").innerHTML = (res[0].Temperature.Metric.Value + "°C " + res[0].WeatherText);
-                console.log(res)
             }
         })
 }
