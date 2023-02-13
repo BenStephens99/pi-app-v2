@@ -206,5 +206,5 @@ button {
 .station-button.selected {
     color: var(--color1);
     box-shadow: none;
-    background-color: #b2c6ff;
+    background-color: var(--color3);
 }
