@@ -20,7 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--color1);
-    cursor: none;
 }
 
 main {  
@@ -54,22 +53,25 @@ button {
 .switch {
     position: relative;
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 55% 20%;
 }
 
-.switch.single {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-top: auto;
-}
+
 
 .switch-title {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%);
-    font-size: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.switch-title p {
+    text-align: center;
 }
 
 .toggles {
@@ -91,9 +93,9 @@ button {
 
 .toggle {
     height: 100%;
-    justify-content: center;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     transition: 400ms;
     width: 100%;
     box-sizing: border-box;
@@ -120,11 +122,11 @@ button {
 }
 
 .toggle p {
-    height: 45px;
+    height: 30px;
 }
 
 .toggle p img {
-    height: 60%;
+    height: 100%;
     filter: invert(44%) sepia(45%) saturate(4504%) hue-rotate(210deg) brightness(100%) contrast(98%);
 }
 
@@ -138,17 +140,19 @@ button {
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     box-sizing: border-box;
-    height: 150%;
+    height: 100%;
     margin: auto;
     text-transform: uppercase;
     transition: 500ms;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-toggle p {
     width: 100%;
     text-align: center;
     position: relative;
-    top: 20px;
+
 }
 
 .button-on {
@@ -191,6 +195,7 @@ button {
     gap: 20px;
     font-size: 0.8em;
     width: 100%;
+    z-index: 2;
 }
 
 .station-button {
