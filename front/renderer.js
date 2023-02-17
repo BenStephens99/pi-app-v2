@@ -5,10 +5,6 @@ const key = process.env.APIKEY;
 const ipv4 = "http://192.168.0.222:8123/"
 const sonosKitchen = "media_player.kitchen_2";
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 class Toggle {
     constructor(obj) {
         this.obj = obj;
